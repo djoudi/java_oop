@@ -2,7 +2,9 @@ package dz.cnfpcl;
 
 import dz.cf.Comp;
 import dz.cf.RH;
-
+import dz.sms.Carol;
+import dz.sms.Mobilis;
+import dz.sms.Oorredoo;
 import dz.cf.DB;
 
 public class MyFirst {
@@ -40,15 +42,28 @@ public class MyFirst {
 		
 		//RH rh = new RH(5); 
 		
-		DB dbwithoutdbname = new DB("localhost","root","root");
-		
-		DB dbwithdbname = new DB("localhost","root","root","dbcnfpcl");
-		
-		DB connect = new DB("localhost","root","root");
-		connect = new DB("localhost","root","root","dbcnfpcl");
+		/*
+		 * DB dbwithoutdbname = new DB("localhost","root","root");
+		 * 
+		 * DB dbwithdbname = new DB("localhost","root","root","dbcnfpcl");
+		 * 
+		 * DB connect = new DB("localhost","root","root"); connect = new
+		 * DB("localhost","root","root","dbcnfpcl");
+		 */
 		//rh.desc();
 		
 		
+		Mobilis m = new Mobilis("htttps:api.mobilis.dz/v2", "user1", "pass1");
+		
+		m.sendSMS();
+		
+Oorredoo o = new Oorredoo("htttps:api.Oorredoo.dz/v2", "user2", "pass2");
+		
+		o.sendSMS();
+		
+Carol c = new Carol("htttps:api.Oorredoo.dz/v2", "user2", "pass2","54545dfds5f4d5ds4f5ds4f5ds");
+		
+		c.sendSMS();
 		
 	
 
