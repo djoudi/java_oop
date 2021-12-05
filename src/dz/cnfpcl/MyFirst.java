@@ -3,6 +3,8 @@ package dz.cnfpcl;
 import dz.cf.Comp;
 import dz.cf.RH;
 
+import dz.cf.DB;
+
 public class MyFirst {
 
 	public static void main(String[] args) {
@@ -28,12 +30,24 @@ public class MyFirst {
 	 * MAC m = new MAC();
 	 */
 		
-		RH rh  = new RH();
+	/*
+	 * RH rh = new RH(); //rh.desc();
+	 * 
+	 * Comp comp = new Comp();
+	 * 
+	 * comp.desc();
+	 */
+		
+		//RH rh = new RH(5); 
+		
+		DB dbwithoutdbname = new DB("localhost","root","root");
+		
+		DB dbwithdbname = new DB("localhost","root","root","dbcnfpcl");
+		
+		DB connect = new DB("localhost","root","root");
+		connect = new DB("localhost","root","root","dbcnfpcl");
 		//rh.desc();
 		
-		Comp comp = new Comp();
-		
-		comp.desc();
 		
 		
 	
