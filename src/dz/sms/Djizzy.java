@@ -2,6 +2,7 @@ package dz.sms;
 
 public class Djizzy extends Provider{
 
+	public String compt ;
 	
 	public Djizzy(String url, String user, String pass) {
 		this.connect(url, user, pass);

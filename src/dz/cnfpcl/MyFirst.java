@@ -2,7 +2,9 @@ package dz.cnfpcl;
 
 import dz.cf.Comp;
 import dz.cf.RH;
+import dz.sms.CNFPCL;
 import dz.sms.Carol;
+import dz.sms.Djizzy;
 import dz.sms.Mobilis;
 import dz.sms.Oorredoo;
 import dz.cf.DB;
@@ -65,6 +67,11 @@ Carol c = new Carol("htttps:api.Oorredoo.dz/v2", "user2", "pass2","54545dfds5f4d
 		
 		c.sendSMS();
 		
+		
+Djizzy d = new Djizzy("htttps:api.djizzy.dz/v2", "user2", "pass2");
+		
+		CNFPCL cp = new CNFPCL();
+		cp.
 	
 
 	}
